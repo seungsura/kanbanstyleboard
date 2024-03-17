@@ -1,0 +1,56 @@
+@import '../theme.scss';
+
+.cardWrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 15px;
+  padding: 15px;
+  border: 1px solid $white;
+  border-radius: 7px;
+  background-color: $white;
+  box-shadow: 1px 1px 5px 0.1px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+
+  .cardHeaderWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+
+    .cardTitleBadge {
+      height: 15px;
+      padding: 2px 10px;
+      color: $white;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .deleteimg {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  .cardTitle {
+    width: 90%;
+    margin: 10px 0 5px 0;
+    border: none;
+    outline: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    color: $fontColor;
+  }
+
+  .cardContent {
+    height: 70px;
+    border: none;
+    outline: 0;
+    resize: none;
+    overflow: visible;
+    font-size: 13px;
+    font-weight: 300;
+    color: $fontColor;
+  }
+}
